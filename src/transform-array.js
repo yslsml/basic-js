@@ -1,8 +1,8 @@
 const CustomError = require("../extensions/custom-error");
 
-module.exports = function transform(/*arr*/) {
-  throw new CustomError('Not implemented');
-  /*
+module.exports = function transform(arr) {
+  //throw new CustomError('Not implemented');
+  
   if (!(arr instanceof Array)) throw "Error";
   const newArr = Array.from(arr)
 
@@ -26,5 +26,5 @@ module.exports = function transform(/*arr*/) {
     else if (arr[i] == '--double-prev' && i==0) newArr.splice(i,1)
 
   }
-  return newArr*/
+  return newArr
 }
